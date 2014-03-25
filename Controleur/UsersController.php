@@ -13,7 +13,8 @@ require_once '../Modele/Users/UsersDAO.class.php';
         }
         
         function userList(){
-            //fonction listant les utilisateurs
+            $this->dao->select("");
+            include_once '';
         }
         
         function userSchoolFilter(){

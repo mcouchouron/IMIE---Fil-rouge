@@ -12,4 +12,6 @@ class SkillsController{
         $this->dao = new \FilRouge\Modele\Users\UsersDAO();
     }
     
+    
+    
 }
