@@ -1,0 +1,43 @@
+#pagefaq{
+width : 700px;
+margin-left : 0px;
+margin-right: 0px;
+margin : auto;
+}
+
+#accordion{
+width : 700px;
+margin : auto;
+background-color : rgb(247,247,247);
+}
+
+#titrequestion{
+width : 634px;
+font-family : arial;
+font-size : 18pt;
+font-weight : bold;
+color : rgb(253,181,21);
+}
+
+#textereponse{
+margin-left : 22px;
+margin-right : 22px;
+font-family : arial;
+font-size : 12pt;
+line-height : 19pt;
+font-weight : normal;
+color : grey;
+text-align : justify;
+}
+
+#retourhome{
+width : 700px;
+height : 45px;
+text-align : center;
+margin-top : 35px;
+font-family : arial;
+font-size : 18px;
+color : black;
+
+text-decoration : none;
+}

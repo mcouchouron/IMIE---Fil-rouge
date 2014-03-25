@@ -1,0 +1,123 @@
+#bandeau{
+width : 800px;
+height: auto;
+text-align: center;
+border : 5px solid rgb(253,181,21);
+margin-left : 0px;
+margin-right: 0px;
+margin : auto;
+}
+
+#logo{
+width: 195px;
+vertical-align: top;
+margin-top: 50px;
+margin-bottom : 20px;
+}
+
+#My{
+width : 95px;
+height : 40px;
+margin-left : 260px;
+margin-top : 15px;
+margin-bottom : 0px;
+padding : 0px;
+text-align : left;
+font-family : arial;
+font-weight : bold;
+font-size : 68px;
+color : rgb(72,185,199);
+}
+
+#Imie{
+display : inline-block;
+width : 95px;
+height : 40px;
+margin : 0px;
+margin-top : -39px;
+margin-left : 20px;
+padding-left : 0px;
+padding-right : 0px;
+vertical-align : top;
+font-family : arial;
+font-weight : bold;
+font-size : 68px;
+color : rgb(194,194,194);
+}
+
+#skill{
+display : block;
+font-family : arial;
+font-weight : bold;
+font-size : 92px;
+text-align : right;
+color : rgb(253,181,21);
+margin-top : -12px;
+margin-bottom: 30px;
+margin-right : 220px;
+}
+
+#titre_idee{
+margin-top: 55px;
+margin-bottom: 95px;
+height: 55px;
+font-family : arial;
+font-weight: bold;
+font-size : 115px;
+color : rgb(226,226,226);
+}
+
+fieldset{
+width : 700px;
+height : 140px;
+padding-top : 15px;
+margin-left : auto;
+margin-right: auto;
+margin-bottom : 35px;
+background-color: rgb(226,226,226);
+border : 0px;
+}
+#voscoordonnees{
+font-family : arial;
+font-weight: lighter;
+font-size: 13pt;
+padding-top : 55px;
+}
+
+label{
+font-family : arial;
+font-weight : lighter;
+font-size : 14pt;
+line-height : 45px;
+}
+
+#inputLogin, #inputMotdepasse {
+padding-left : 15px;
+margin-top : 18px;
+margin-left : 15px;
+font-family : arial;
+font-weight : lighter;
+font-size : 14pt;
+line-height : 30px;
+}
+
+#button{
+margin-left : auto;
+margin-right : auto;
+margin-top : 28px;
+width : 200px;
+height: 35px;
+background-color: rgb(72,185,199);
+}
+
+#boutonconnexion{
+display : block;
+width : 200px;
+font-family : arial;
+font-weight : bold;
+font-size : 15pt;
+padding-top : 8px;
+text-decoration : none;
+color : white;
+
+}

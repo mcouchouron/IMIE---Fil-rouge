@@ -1,0 +1,15 @@
+	ENLEVE DE LA PAGE pageheader
+	<!--form id="mon formulaire" method="post" action="traitement php">		
+		<fieldset>
+			<legend id="coordonnees">Vos coordonnées</legend>
+				<label for="nom">Nom</label>
+					<input id="inputnom" placeholder="  Nom" type="text" name="nom" id="nom"/>
+				<label for="prenom">Prénom</label>
+					<input id="inputprenom" placeholder="  Prenom" type="text" name="prenom" id="prenom"/>
+				<label for="ecole">Ecole</label>
+					<input id="inputecole" placeholder="  Ecole" type="text" name="Ecole" id="Ecole"/>
+				<label for="Courriel">Mail</label>
+					<input id="inputcourriel" placeholder="  Mail" type="text" name="Mail" id="Mail"/>
+				<input id="boutonmodifier" type="submit" value="MODIFIER"/>	
+		</fieldset>	
+	</form-->
