@@ -6,8 +6,7 @@
 			<link rel="stylesheet" type="text/css" href="css/pageprincipale.css"/>
 			<link rel="stylesheet" type="text/css" href="css/projet-style.css"/>
 			
-			<!--link rel="stylesheet" type="text/css" href="css\homepageFred.css"/-->
-			<!--link rel="stylesheet" type="text/css" href="css\homepageFooter.css"/-->
+			
 		</head>
 			<body>
 				<!--Ici insertion de la page Header-->
