@@ -1,0 +1,85 @@
+#fieldsetformulaire{
+display : inline-block;
+width:400px;
+height:150px;
+padding-left: 35px;
+border:5px solid rgb(253,181,21);
+margin : auto;
+}
+
+#presentationformulaire{
+width:458px;
+margin: auto;
+margin-bottom : 15px;
+}
+
+label{
+width : 65px;
+font-family : arial;
+font-weight : normal;
+font-size : 14px;
+text-align : right;
+margin: auto;
+}
+
+#inputnom{
+width : 140px;
+margin-top: 15px;
+margin-right : 10px;
+margin-bottom : 20px;
+border-radius : 3px;
+}
+
+#inputprenom{
+width : 120px;
+margin-bottom : 20px;
+border-radius : 3px;
+}
+
+#inputecole{
+width : 133px;
+margin-right: 10px;
+margin-bottom : 8px;
+border-radius : 3px;
+}
+
+#inputcourriel{
+width : 143px;
+border-radius : 3px;
+}
+
+/*input[type="submit"]{*/
+#boutonmodifier{
+width : 170px;
+height : 28px;
+border-radius: 6px;
+font-family: arial;
+font-weight: bold;
+font-size: 13pt;
+color: white;
+border-radius : 6px;
+display : block;
+padding-top : 2px;
+margin : auto;
+margin-top : 18px;
+color: white;
+background-color : rgb(72,185,199);
+}
+
+#buttonretour{
+width : 450px;
+padding-top: 20px;
+margin : auto;
+text-align : center;
+}
+
+#retourarticle{
+width : 700px;
+height : 45px;
+text-align : center;
+margin-top : 35px;
+font-family : arial;
+font-size : 11pt;
+color : rgb(200,200,200);
+text-decoration : none;
+}

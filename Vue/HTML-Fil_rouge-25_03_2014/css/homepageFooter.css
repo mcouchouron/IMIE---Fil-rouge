@@ -1,0 +1,43 @@
+footer	{
+	display:block;
+	text-align:center;
+}
+
+*	{
+	background-color:white;
+	font-family:Microsoft JhengHei;
+	border:none;
+}
+b	{
+	padding-left:50px;
+	padding-right:50px;
+}
+
+
+form input[type="submit"]	{ 
+    background-color: #aaffaa;
+    width: 20%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+#boutonProjet {
+display : inline-block;
+padding : 20px;
+color : black;
+text-align : center;
+-ms-transform:rotate(0deg);
+-webkit-transform:rotate(0deg);
+}
+
+#boutonProjet:hover {
+-moz-transform:scale(1.10);
+transform:rotate(4deg);
+-ms-transform:rotate(4deg);
+-webkit-transform:rotate(4deg);
+}
+

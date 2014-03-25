@@ -1,0 +1,755 @@
+#page{
+width : 1480px;
+margin-left : 0px;
+margin-right: 0px;
+margin : auto;
+}
+
+/*Bloc haut gauche*/
+header{
+display : inline-block;
+width : 230px;
+text-align : center;
+background-color : rgb(0,0,0);
+height : 365px;
+vertical-align : top;
+}
+
+#p1{
+margin-top : 45px;
+margin-bottom : 20px;
+width : 150px;
+height : 50px
+}
+
+#My{
+width : 95px;
+height : 40px;
+margin-left : 10px;
+margin-top : 15px;
+margin-bottom : 0px;
+padding : 0px;
+text-align : left;
+font-family : arial;
+font-weight : bold;
+font-size : 38px;
+color : rgb(72,185,199);
+}
+
+#Imie{
+display : inline-block;
+width : 95px;
+height : 40px;
+margin : 0px;
+margin-top : -39px;
+margin-left : 0px;
+padding-left : 0px;
+padding-right : 0px;
+vertical-align : top;
+font-family : arial;
+font-weight : bold;
+font-size : 38px;
+color : rgb(194,194,194);
+}
+
+#skill{
+display : block;
+font-family : arial;
+font-weight : bold;
+font-size : 62px;
+text-align : right;
+color : rgb(253,181,21);
+margin-top : -25px;
+margin-right : 10px;
+}
+
+/*Partie haute centrale*/
+#bandeautitre{
+display : inline-block;
+vertical-align : top;
+width : 969px;
+height : 318px;
+}
+
+#titre1{
+display : inline-block;
+height : 45px;
+vertical-align : top;
+font-family:arial;
+font-weight:normal;
+font-size : 95px;
+color : rgb(226,226,226);
+margin-left : 60px;
+margin-top : 50px;
+margin-bottom : 0px;
+}
+
+#titre2{
+display : inline-block;
+vertical-align : top;
+font-family:arial;
+font-weight:bold;
+height : 120px;
+color : rgb(72,185,199);
+font-size : 145px;
+margin-left : 125px;
+margin-top : 30px;
+margin-bottom : 0px;
+}
+
+#loupe{
+display : inline-block;
+vertical-align : bottom;
+height : 20px;
+margin-left : 840px;
+margin-top : 50px;
+}
+
+#zonerecherche{
+display : inline-block;
+vertical-align : bottom;
+width : 115px;
+height :96px;
+margin-left : 830px;
+color : rgb(72,185,199);
+}
+
+#texterecherche{
+display : inline-block;
+width : 90px;
+height : 22px;
+padding-left : 25px;
+margin-top : 63px;
+margin-right : 20px;
+margin-bottom : -30px;
+}
+
+#boutonrecherche{
+width : 17px;
+padding-top : 5px;
+padding-left : 5px;
+margin-top : 63px;
+position : absolute;
+}
+
+/*Bloc haut droite*/
+#identification{
+color : white;
+display : inline-block;
+padding-top : 25px;
+/*border : 2px solid black;*/
+width : 250px;
+background-color : rgb(128,128,128);
+height : 340px;
+}
+
+fieldset{
+width : auto;
+height : 128px;
+margin-top : 20px;
+margin-left : 10px;
+margin-right : 10px;
+margin-bottom : 30px;
+text-align : left;
+border-color : white;
+}
+
+#pictoUser{
+display : block;
+width : 45px;
+margin : auto;
+padding-top : 10px;
+}
+
+#nomUser{
+font-family : arial;
+font-weight : normal;
+font-size : 13pt;
+text-align : center;
+margin-top : 10px;
+}
+
+#imageUser{
+display: inline-block;
+height : auto;
+width : 75px;
+text-align : left;
+margin-top : 10px;
+margin-left : 0px;
+}
+
+#notification{
+display : inline-block;
+vertical-align : top;
+margin-top : 33px;
+margin-left : 25px;
+border-radius : 6px;
+background-color : rgb(72,185,199);
+}
+
+#deconnexion{
+display : block;
+margin-top : -55px;
+margin-bottom : 45px;
+margin-left : 105px;
+border-radius : 6px;
+background-color : rgb(172,185,199);
+}
+
+#boutonmodifier{
+width : 170px;
+height : 22px;
+font-family: arial;
+font-weight: bold;
+font-size: 10pt;
+border-radius : 6px;
+display : block;
+position : relative;
+margin : auto;
+margin-top : 18px;
+color: white;
+background-color : rgb(72,185,199);
+}
+
+/*#coordonnees{
+text-align : center;
+font-family:arial;
+font-weight:bold;
+font-size : 15px;
+color : white;
+}*/
+
+/*label{
+width : 65px;
+font-family : arial;
+font-weight : normal;
+font-size : 14px;
+text-align : right;
+margin-left : 5px;
+margin-right : 10px;
+}
+
+#inputnom{
+width : 140px;
+margin-bottom : 8px;
+border-radius : 6px;
+}
+
+#inputprenom{
+width : 120px;
+margin-bottom : 8px;
+border-radius : 6px;
+}
+
+#inputecole{
+width : 133px;
+margin-bottom : 8px;
+border-radius : 6px;
+}
+
+#inputcourriel{
+width : 143px;
+border-radius : 6px;
+}*/
+
+
+/*bloc navigation central*/
+nav{
+display : inline-block;
+width : 1458px;
+height : 45px;
+vertical-align : bottom;
+/*border : 2px solid black;*/
+background : rgb(190,190,190);
+text-align : center;
+}
+
+#boutonhome, #boutonprojet, #boutoncompetences, #boutonutilisateurs{
+display : inline-block;
+font-family : arial;
+font-size : 18px;
+color : white;
+padding-top : 6px;
+width : 250px;
+height : 45px;
+text-decoration : none;
+}
+
+/*Partie latérale "Proposition de projet"*/
+aside{
+display : inline-block;
+margin-left : -180px;
+margin-top : -250px;
+}
+
+/*Corps de page*/
+#corps_page{
+width : 970px;
+margin-left : 0px;
+margin-right : 0px;
+margin : auto;
+}
+
+section{
+display : inline-block;
+width:920px;
+height:auto;
+margin-top : 35px;
+border:5px solid rgb(253,181,21);
+margin-bottom : 25px;
+}
+
+#titrePresentation{
+font-family:arial;
+font-weight:bold;
+font-size:35pt;
+width: 330px;
+padding-left:30px;
+background-color:rgb(253,181,21);
+color:white;
+}
+
+#intro{
+font-family:arial;
+font-weight:bold;
+font-size:16.5pt;
+padding-left:95px;
+padding-right:80px;
+color:grey;
+}
+
+h2{
+font-family:arial;
+font-weight:bold;
+font-size:19pt;
+padding-left:45px;
+color:black;
+}
+
+h3{
+font-family:arial;
+font-weight:bold;
+font-size:15pt;
+padding-left:45px;
+color:black;
+}
+
+#blocarticle{
+height : 150px;
+font-family:arial;
+font-weight:normal;
+font-size:10pt;
+text-align:justify;
+padding-left:65px;
+padding-right:15px;
+margin-right : 60px;
+color:black;
+overflow : auto;
+}
+
+#blocarticlesansscroll{
+height : auto;
+font-family:arial;
+font-weight:normal;
+font-size:10pt;
+text-align:justify;
+margin-top : 15px;
+margin-right :45px;
+margin-left :45px;
+color:black;
+}
+
+#lirelasuite{
+display:none;
+font-family:arial;
+font-weight:normal;
+font-size:10pt;
+line-height : 12pt;
+text-align:justify;
+margin-right :45px;
+margin-left :45px;
+color:black;
+}
+
+.mots-cles{
+display:inline-block;
+color:black;
+font-family:arial;
+font-weight:bold;
+font-size:12px;
+padding-left:52px;
+}
+
+#mots-cles{
+display:inline-block;
+/*background-color:rgb(253,181,21);*/
+color:white;
+/*width: 58px;
+height:17px;*/
+margin-left:-85px;
+padding-bottom : 15px;
+font-family:arial;
+font-weight:bold;
+font-size:12px;
+}
+
+.blocMotsCle{
+height : 22px;
+display : inline-block;
+padding-top : 4px;
+margin-top: 5px;
+margin-left : 45px;
+vertical-align : top;
+}
+#textearticle{
+border:1px solid black;
+height:auto;
+margin-left:30px;
+margin-right:30px;
+margin-bottom: 25px;
+}
+
+#textearticlesansscroll{
+/*border:1px solid black;*/
+height:auto;
+margin-top:25px;
+margin-left:30px;
+margin-right:30px;
+margin-bottom: 25px;
+}
+
+strong{
+font-family : arial;
+font-weight : bold;
+font-size : 12pt;
+text-decoration : underline;
+}
+
+#retourarticle{
+width : 810px;
+height : 45px;
+text-align : center;
+margin-top : 05px;
+font-family : arial;
+font-weight : normal;
+font-size : 11pt;
+color : rgb(200,200,200);
+text-decoration : none;
+}
+
+/*page Mes Compétences*/
+
+/*systeme d'animation notation*/
+.rating {
+display: inline-block;
+text-align : right;
+direction: rtl;  
+}
+.rating a {
+color: #aaa;  
+text-decoration: none;  
+font-size: 15pt;  
+transition: color .4s;  
+} 
+.rating a:hover,  
+.rating a:focus,  
+.rating a:hover ~ a,  
+.rating a:focus ~ a { 
+color: orange;  
+cursor: pointer;  
+}
+
+#titrePresentation2{
+font-family:arial;
+font-weight:bold;
+font-size:35pt;
+width: 430px;
+margin-bottom: 35px;
+padding-left:30px;
+background-color:rgb(253,181,21);
+color:white;
+}
+
+#titreComp{
+font-family: arial;
+font-weight: bold;
+font-size: 14pt;
+height : 28px;
+margin-left: 12px;
+padding-left: 10px;
+padding-top: 8px;
+color: white;
+background-color: rgb(253,181,21);
+}
+
+#comp{
+font-family: arial;
+font-size: 15pt;
+display : block;
+line-height: 18pt;
+margin-left : -15px;
+margin-top : 0px;
+padding-left : 0px;
+}
+
+#search{
+margin-left : 40px;
+font-family: arial;
+font-weight: lighter;
+font-size: 15pt;
+}
+
+#saisiecomp{
+width: 330px;
+height: 28px;
+padding-left: 5px;
+margin-left: 30px;
+margin-top: 10px;
+}
+
+/*input[type="submit"]{*/
+#boutonform{
+width: 120px;
+height: 28px;
+border-radius: 6px;
+font-family: arial;
+font-size: 13pt;
+color: white;
+background-color: rgb(72,185,199);
+margin-left: 220px;
+margin-top: 25px;
+padding-left: 5px;
+}
+
+#formcomp{
+margin-left: 40px;
+margin-right: 50px;
+margin-top: 45px;
+}
+
+#boutonradio{
+display : inline-block;
+margin-top: 15px;
+margin-left: 5px;
+font-family: arial;
+font-size: 15pt;
+line-height: 15px;
+}
+
+#eval{
+width : 105px;
+}
+
+.competence{
+display: inline-block;
+width: 400px;
+border : 2px solid rgb(253,181,21);
+margin-left : 30px;
+margin-bottom: 35px;
+background-color: rgb(247,247,247);	
+}
+
+.recherche{
+display: inline-block;
+border : 2px solid rgb(253,181,21);
+margin-left : 30px;
+background-color: rgb(247,247,247);	
+width : 400px;
+height: 500px;
+vertical-align: top;
+}
+
+/*page utilisateurs*/
+
+#titrePresentation3{
+font-family:arial;
+font-weight:bold;
+font-size:35pt;
+width: 370px;
+margin-bottom: 35px;
+padding-left:30px;
+background-color:rgb(253,181,21);
+color:white;
+}
+
+.recherche2{
+display: inline-block;
+border : 2px solid rgb(253,181,21);
+margin-left : 30px;
+background-color: rgb(247,247,247);	
+width : 855px;
+height: 335px;
+margin-bottom: 5px;
+vertical-align: top;
+}
+
+#search2{
+margin-left : 185px;
+font-family: arial;
+font-weight: lighter;
+font-size: 15pt;
+}
+
+#listechoix{
+display : inline-block;
+font-family : arial;
+font-weight : normal;
+font-size : 10pt;
+color : rgb(180,180,180);
+border: 1px solid rgb(200,200,200);
+padding-left : 2px;
+margin-top: 25px;
+margin-left : 25px;
+width : 274px;
+height : 36px;
+text-decoration : none;
+}
+
+#listechoix2{
+display : inline-block;
+font-family : arial;
+font-weight : normal;
+font-size : 10pt;
+color : rgb(180,180,180);
+border: 1px solid rgb(200,200,200);
+padding-left : 2px;
+margin-top: 25px;
+margin-left : 25px;
+width : 322px;
+height : 36px;
+text-decoration : none;
+}
+
+#champliste1{
+font-family : arial;
+font-weight : bold;
+color: white;
+background-color : rgb(253,181,21);
+}
+
+#champliste2{
+font-family : arial;
+font-weight : bold;
+color: black;
+background-color : rgb(247,247,247);
+}
+
+#boutonform2{
+display: block;
+width: 120px;
+height: 28px;
+border-radius: 6px;
+font-family: arial;
+font-size: 13pt;
+color: white;
+background-color: rgb(72,185,199);
+margin : auto;
+margin-top: 35px;
+margin-bottom : 35px;
+padding-left: 5px;
+}
+
+#titreComp2{
+font-family: arial;
+font-weight: bold;
+font-size: 14pt;
+height : 28px;
+margin-left: 12px;
+padding-left: 10px;
+padding-top: 8px;
+color: white;
+background-color: rgb(72,185,199);
+}
+
+#resultat{
+display: inline-block;
+border : 2px solid rgb(72,185,199);
+margin-left : 30px;
+background-color: rgb(247,247,247);	
+width : 855px;
+height: auto;
+margin-bottom: 30px;
+vertical-align: top;
+}
+
+#overflowtableau{
+width: 700px;
+height: 95px;
+border: 0px;
+margin: auto;
+margin-bottom: 25px;
+overflow: auto;
+}
+
+#tableau_result{
+width: 700px;
+height: 35px;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+border: 1px solid rgb(200,200,200);
+border-collapse: collapse;
+}
+
+#thnom{
+width: 218px;
+}
+
+#thcomp{
+width: 221px;
+}
+
+#thecole{
+width: 226px;
+}
+
+th{
+width: 225px;
+height: 15px;
+font-family: arial;
+font-weight: bold;
+font-size: 11pt;
+color: white;
+background-color: rgb(150,150,150);
+border: 1px solid rgb(247,247,247);
+}
+
+#tabcell{
+border-collapse: collapse;
+}
+
+#cellule{
+width: 225px;
+height: 15px;
+font-family: arial;
+font-weight: normal;
+font-size: 9pt;
+background-color: white;
+border: 1px solid rgb(200,200,200);
+padding-left: 10px;
+margin-bottom: auto;
+}
+
+
+/*footer*/
+footer{
+width : 810px;
+padding-left : 70px;
+margin : auto;
+}
+.liens{
+width : 810px;
+}
+
+#lien_mention, #lien_contacts, #lien_faq{
+display : inline-block;
+text-align : center;
+font-family : arial;
+font-weight : normal;
+font-size : 11pt;
+color : rgb(200,200,200);
+padding-top : 6px;
+width : 250px;
+height : 45px;
+text-decoration : none;
+}

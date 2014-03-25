@@ -1,0 +1,359 @@
+body{
+/*options*/
+
+display:block;
+}
+
+section{
+display : inline-block;
+width:920px;
+height:auto;
+margin-top : 35px;
+border:5px solid rgb(253,181,21);
+margin-bottom : 45px;
+}
+
+#parent{
+/*options*/
+/*background: white;*/
+padding: 10px;
+display: block;
+
+/*dimensions*/
+width: 990px;
+
+/*bordures*/
+border-style: solid;
+border-width: 0px;
+border-color: rgb(253,181,21);
+padding: 10px; 
+}
+
+#sous-parent{
+width : 1085px;
+height: 220px;
+margin-left: 15px;
+}
+
+#titrePresentation3{
+width: 280px;
+height: 57px;
+font-family: arial;
+font-weight: bold;
+font-size: 35pt;
+margin-left: 0px;
+margin-bottom: 25px;
+padding-top: 0px;
+padding-left: 30px;
+color: white;
+background-color: rgb(253,181,21);
+}
+
+/* ------------------PROJET RECRUTEMENT------------------ */
+.header{
+/*options*/
+width: 835px;
+height: 25px;
+padding-top: 5px;
+padding-left: 30px;
+background: rgb(253, 181, 21);
+font-weight: bold;
+font-family: arial;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-top-width: 2px;
+border-left-width: 2px;
+border-right-width: 0px;
+border-color: white;
+}
+#chfproj{
+margin-left: 380px;
+}
+
+.blocgauche{
+/*dimensions*/
+width: 226px;
+height: 162px;
+/*options*/
+font-family: arial;
+font-weight: bold;
+vertical-align: top;
+color: white;
+background: rgb(228, 108, 10);
+padding-left: 15px;
+padding-top: 15px;
+display: inline-block;
+/*bordures*/
+border-style: solid;
+border-width:1px;
+border-bottom-width: 2px;
+border-left-width: 2px;
+border-color: white;
+}
+
+.champProjet{
+width: 195px;
+height: 85px;
+border : 0px;
+margin-top: 15px;
+padding-top: 10px;
+border-radius: 3px;
+font-family: arial;
+font-weight : lighter;
+font-size: 10pt;
+text-align: center;
+}
+
+#fils{
+display: inline-block;
+}
+
+.milieuhaut{
+/*options*/
+font-family: arial;
+font-weight: bold;
+padding-left: 10px;
+color: white;
+background: rgb(228, 108, 10);
+display:inline-block;
+/*dimensions*/
+width: 612px ;
+margin-left:-4px;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-right-width: 1px;
+border-color: white;
+}
+
+#titretableau{
+width : 600px;
+margin-bottom : 12px;
+background-color : rgb(125,125,125);
+font-family : arial;
+font-size : 10pt;
+font-weight : bold;
+color : white;
+}
+
+table{
+border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+
+td{
+width : 256px;
+margin-left : 10px;
+padding-left : 10px;
+font-family : arial;
+font-size : 0.9em;
+font-weight : normal;
+color : black;
+background-color : white;
+border: 1px solid rgb(225,225,225);
+}
+
+#tableauscroll{
+width : 595px;
+height : 109px;
+background-color : white;
+border : 1px solid rgb(225,225,225);
+overflow : auto;
+}
+
+#titretableau1{
+width : 435px;
+margin-bottom : 12px;
+background-color : rgb(125,125,125);
+font-family : arial;
+font-size : 10pt;
+font-weight : bold;
+color : white;
+}
+
+#tableauscroll1{
+width : 430px;
+height : 109px;
+background-color : white;
+border : 1px solid rgb(225,225,225);
+overflow : auto;
+}
+
+.milieubas{
+/*options*/
+background: white; /*rgb(245, 235, 228);*/
+/*dimensions*/
+width: 526px ;
+height:145px; 
+margin-left:-4px;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-right-width:0px;
+border-bottom-width: 2px;
+border-color: white;
+/*textes*/
+font-family: arial;
+font-weight: lighter;
+font-size: 11pt;
+line-height: 15pt;
+padding-left: 10px;
+padding-top: 10px;
+}
+
+#subpostuler{
+width: 85px;
+height: 25px;
+margin-left:270px;
+margin-top: 4px;
+margin-bottom: 25px;
+background: orange;
+}
+
+.surligne1:hover{
+background: orange;
+}
+.surligne2:hover{
+background: orange;
+}
+.surligne3:hover{
+background: orange;
+}
+.surligne4:hover{
+background: orange;
+}
+.surligne5:hover{
+background: orange;
+}
+
+/* ------------------PROJET LE PLUS RECENT------------------ */
+/* ------------------PROJET EN COURS ----------------------- */
+
+#b1fils, #b2fils{
+display: inline-block;
+}
+.b1header, .b2header{
+/*options*/
+height: 25px;
+padding-top: 5px;
+padding-left: 15px;
+background: rgb(253, 181, 21);
+font-weight: bold;
+font-family: arial;
+margin-top: 20px;
+/*dimensions*/
+width : 850px;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-top-width: 2px;
+border-left-width: 2px;
+border-right-width: 2px;
+border-color: white;
+}
+
+.b1blocgauche, .b2blocgauche{
+/*options*/
+font-family: arial;
+font-weight: bold;
+vertical-align: top;
+color: white;
+background: rgb(228, 108, 10);
+padding-left: 15px;
+padding-top: 15px;
+display: inline-block;
+/*dimensions*/
+width: 230px;
+height: 162px;
+/*bordures*/
+border-style: solid;
+border-width:1px;
+border-bottom-width: 2px;
+border-left-width: 2px;
+border-color: white;
+}
+
+.b1milieuhaut, .b2milieuhaut{
+/*options*/
+font-family: arial;
+font-weight: bold;
+padding-left: 10px;
+color : white;
+background: rgb(228, 108, 10);
+display:inline-block;
+/*dimensions*/
+width: 451px ;
+margin-left:-4px;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-color: white;
+}
+
+.b1milieubas, .b2milieubas{
+/*options*/
+background: white; /*rgb(245, 235, 228);*/
+/*dimensions*/
+width: 380px ;
+height:146px; 
+margin-left:-4px;
+/*bordures*/
+border-style: solid;
+border-width: 1px;
+border-bottom-width: 2px;
+border-color: white;
+/*textes*/
+font-family: arial;
+font-weight: lighter;
+font-size: 11pt;
+line-height: 15pt;
+padding-left: 10px;
+padding-top: 10px;
+}
+
+.b1surligne1:hover{
+background: orange;
+}
+.b1surligne2:hover{
+background: orange;
+}
+.b1surligne3:hover{
+background: orange;
+}
+.b1surligne4:hover{
+background: orange;
+}
+.b1surligne5:hover{
+background: orange;
+}
+
+#b1droite, #b2droite{
+/*options*/
+display: inline-block;
+text-align: center;
+vertical-align: top;
+display:inline-block;
+background: orange;
+/*dimensions*/
+width: 155px;
+height: 167px;
+margin-left: -3px;
+/*bordures*/
+border-style: solid;
+border-top-width: 1px;
+border-left-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-color: white;
+/*textes*/
+font-family: arial;
+font-height: bold;
+font-size: 11pt;
+padding-top: 10px;
+}
+
+#imagePourcentage{
+width:87px;
+height:84px;
+margin: 14px;
+}
