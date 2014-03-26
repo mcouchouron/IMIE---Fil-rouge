@@ -2,7 +2,7 @@
 
 namespace FilRouge\Controleur;
 
-require_once '../Modele/Users/UsersDAO.class.php';
+require_once '/../Modele/Users/UsersDAO.class.php';
 
     class UserController{
         
@@ -12,9 +12,8 @@ require_once '../Modele/Users/UsersDAO.class.php';
             $this->dao = new \FilRouge\Modele\Users\UsersDAO();
         }
         
-        function userList(){
-            $this->dao->select("");
-            include_once '';
+        function userDisplay(){
+            include_once '/../Vue/pageUtilisateurs.php';
         }
         
         function userSchoolFilter(){

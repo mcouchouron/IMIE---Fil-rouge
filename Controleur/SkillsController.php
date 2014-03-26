@@ -2,16 +2,18 @@
 
 namespace FilRouge\Controleur;
 
-require_once '../Modele/Skills/SkillsDAO.class.php';
+require_once '/../Modele/Skills/SkillsDAO.class.php';
 
-class SkillsController{
-    
+class SkillsController {
+
     private $dao;
-    
+
     function __construct() {
-        $this->dao = new \FilRouge\Modele\Users\UsersDAO();
+        $this->dao = new \FilRouge\Modele\Skills\SkillsDAO();
     }
     
-    
-    
+    function skillDisplay(){
+        include_once '/../Vue/pageCompetences.php';
+    }
+
 }

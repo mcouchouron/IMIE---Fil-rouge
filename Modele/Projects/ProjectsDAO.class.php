@@ -15,7 +15,7 @@ namespace FilRouge\Modele\Projects;
 
 use PDO;
 
-include_once("Connection/myconnection.inc.php");
+include_once("/../Connection/myconnection.inc.php");
 require_once("ProjectsDTO.class.php");
 
 class ProjectsDAO {

@@ -2,18 +2,18 @@
 
 namespace FilRouge\Controleur;
 
+require_once '/../Modele/Projects/ProjectsDAO.class.php';
 
-class ProjectsController{
-    
+class ProjectsController {
+
     private $dao;
-    
+
     function __construct() {
-        $this->dao = new \FilRouge\Modele\Users\UsersDAO();
+        $this->dao = new \FilRouge\Modele\Projects\ProjectsDAO();
     }
-    
-    function projectDisplay(){
+
+    function projectDisplay() {
         include_once '/../Vue/pageProjets.php';
     }
-    
-}
 
+}

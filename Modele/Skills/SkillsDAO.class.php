@@ -9,8 +9,8 @@ namespace FilRouge\Modele\Skills;
 
 use PDO;
 
-include_once "Connection/myconnection.inc.php";
-require_once 'SkillsDTO.php';
+include_once "/../Connection/myconnection.inc.php";
+require_once 'SkillsDTO.class.php';
 
 class SkillsDAO {
     
