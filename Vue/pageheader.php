@@ -45,9 +45,9 @@ $_SESSION['age'] = 24;
             <a id="boutonhome" href="Vue/pageAccueil.php">| Home |</a>
         </div>
         <div id="boutonprojet">
-            <a id="boutonprojet" href="Vue/pageProjets.php">| Projets |</a>
+            <a id="boutonprojet" href="index.php?ctrl=pageProjets">| Projets |</a>
         </div>
         <a id="boutoncompetences" href="Vue/pageCompetences.php">| Compétences |</a>
-        <a id="boutonutilisateurs" href="Vue/pageUtilisateurs.php">| Utilisateurs |</a>
+        <a id="boutonutilisateurs" href="index.php?ctrl=pageUtilisateurs">| Utilisateurs |</a>
     </nav>
 </div>
