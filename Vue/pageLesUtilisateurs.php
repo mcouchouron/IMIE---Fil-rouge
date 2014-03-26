@@ -68,62 +68,18 @@
                     </tr>
                 </table>
                 <div id="overflowtableau">
+
                     <table id="tabcell">
-                        <tr>
-                            <td id="cellule">Nom 1</td>
-                            <td id="cellule">Compétence 1</td>
-                            <td id="cellule">Ecole 1</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 2</td>
-                            <td id="cellule">Compétence 2</td>
-                            <td id="cellule">Ecole 1</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 3</td>
-                            <td id="cellule">Compétence 3</td>
-                            <td id="cellule">Ecole 2</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>   
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>   
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
-                        <tr>
-                            <td id="cellule">Nom 4</td>
-                            <td id="cellule">Compétence 4</td>
-                            <td id="cellule">Ecole 3</td>
-                        </tr>
+                        <?php
+                        //$userList est le tableau retourné par le select()
+                        foreach ($userList as $key => $value) {
+                            echo "<tr>";
+                            echo "<td id =\"cellule\">" . $userList[$key] = htmlspecialchars($value->getName()) . " " . $userList[$key] = htmlspecialchars($value->getSurname()) . "</td>";
+                            echo "<td id =\"cellule\">" . $userList[$key] = htmlspecialchars($value->getAdress1()) . "</td>";
+                            echo "<td id =\"cellule\">" . $userList[$key] = htmlspecialchars($value->getSchoolId()) . "</td>";
+                            echo "</tr>";
+                        }
+                        ?>
                     </table>
                 </div>
             </section>
