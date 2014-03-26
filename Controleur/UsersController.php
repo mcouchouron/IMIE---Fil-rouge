@@ -12,10 +12,10 @@ class UserController {
         $this->dao = new \FilRouge\Modele\Users\UsersDAO();
     }
     
-    //affichqge de tous les utilisateurs
+    //affichage de tous les utilisateurs
     function userDisplay() {
+        //$userlist est réutilisé dans l'include de la vue (en dessous) il contient un tableau d'objet usersDTO
         $userList = $this->dao->select("");
-
         include_once '/../Vue/pageUtilisateurs.php';
     }
 
@@ -29,6 +29,7 @@ class UserController {
 
     function userSkill() {
         //fonction affichant les compétences des utilisateurs
+        
     }
 
 }

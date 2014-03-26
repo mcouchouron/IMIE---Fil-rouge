@@ -56,7 +56,10 @@
 
                     </select>
                 </form>
-            </article>						
+            </article>	
+            
+            <!------------------- Affichage des résultats------------------->
+            
             <section id="resultat">				
                 <h4 id="titreComp2">Résultats de votre recherche</h4>
 
@@ -83,6 +86,9 @@
                     </table>
                 </div>
             </section>
+            
+            <!------------------- Fin affichage des résultats ------------------->
+            
         </section>					
         </section>
     </div>
