@@ -11,25 +11,35 @@
                     <h4 id="titreComp">Rechercher un utilisateur</h4>
                     <label id="search2" for="labelRecherche">Par nom :</label>
                     <input id="saisiecomp" value ="" type="text" name="competence" placeholder="Nom"/>
-                    </br>										
+                    </br>
+                    <!------------------- champ de sélection des compétences -------------------> 
+
                     <label id="search2" for="labelRecherche">Par compétence :</label>
                     <select id="listechoix" name="choix">
+
                         <option id="champliste2" value="html"> - CHOISISSEZ - </option>
-                        <optgroup id="champliste1" label="Web"> 
-                            <option id="champliste2" value="html">HTML 5</option>
-                            <option id="champliste2" value="php">PHP</option>
-                            <option id="champliste2" value="css">CSS3</option>
-                        </optgroup>
+                        <?php
+                        //champs de la compétence mère
+                        echo "<optgroup id=\"champliste1\" label=\"" . $skills[$key] = $value->getName() . "\">";
+                        //champs des compétences à sélectionner
+                        echo "<option id=\"champliste2\" value=\"skill" . $skills[$key] = $value->getId() . "\">" . $skills[$key] = $value->getName() . "</option>";
+
+                        echo "</optgroup>";
+                        ?>
                     </select>
+
+                    <!------------------- fin champ de sélection des compétences ------------------->  
+
                     </br>	
-                    <!-- champ de sélection de l'école -->
+
+                    <!------------------- champ de sélection de l'école ------------------->
                     <label id="search2" for="labelRecherche">Par Ecole :</label>
                     <select id="listechoix2" name="choix">
 
                         <option id="champliste2" value="html"> - CHOISISSEZ - </option> 
                         <?php
                         foreach ($school as $key => $value) {
-                            echo "<option id=\"champliste2\" value=\"".$school[$key] = $value->getId()."\"> IMIE ".$school[$key] = $value->getName()."<option>";
+                            echo "<option id=\"champliste2\" value=\"school" . $school[$key] = $value->getId() . "\"> IMIE " . $school[$key] = $value->getName() . "<option>";
                         }
                         ?>
                         </br>
@@ -46,7 +56,7 @@
                         ?-->
 
                     </select>
-                    <!-- fin champ de sélection de l'école -->
+                    <!------------------- fin champ de sélection de l'école ------------------->
                 </form>
             </article>	
 

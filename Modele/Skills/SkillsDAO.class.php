@@ -21,7 +21,6 @@ class SkillsDAO {
         $result = $pdo->query("SELECT skill_id, skill_name, skill_description, skill_is_validated, skill_id_1, "
                 . "user_id FROM skill ".$conditions.";");
         
-        
         while ($row = $result->fetchObject()) {
             $id = $row->skill_id;
             $name = $row->skill_name;
