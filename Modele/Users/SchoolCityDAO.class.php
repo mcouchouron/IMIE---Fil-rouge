@@ -10,7 +10,7 @@ namespace FilRouge\Modele\Users;
 
 use PDO;
 
-include_once("Connection/myconnection.inc.php");
+include_once("/../Connection/myconnection.inc.php");
 require_once("SchoolCityDTO.class.php");
 
 class SchoolCityDAO {
@@ -21,12 +21,9 @@ class SchoolCityDAO {
 
         $result = $pdo->query("SELECT school_city_id, school_city_name FROM school_city ".$condition.";");
 
-        
-
-
         while ($row = $result->fetchObject()) {
-            echo $id = $row->school_city_id;
-            echo $name = $row->school_city_name;
+            $id = $row->school_city_id;
+            $name = $row->school_city_name;
             $school = new SchoolCityDTO($id, $name);
             $tab[] = $school;
         }

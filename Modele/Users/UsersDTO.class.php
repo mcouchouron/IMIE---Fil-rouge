@@ -29,6 +29,7 @@ class UsersDTO {
     private $firstConnection;
     private $promotionId;
     private $schoolId;
+    private $schoolCity;
     private $profileId;
     //tableaux skillLevel (user_has_skill_and_level) tableau à 2 dimensions comme competence = array() contenant
     //d'un coté l'objet compétence et de l'autre l'objet niveau (cad avec leurs attributs)
@@ -40,7 +41,7 @@ class UsersDTO {
     //**************************************************************
     
     
-    function __construct($id, $login, $password, $surname, $name, $birthday, $adress1, $adress2, $adress3, $zipCode, $city, $email, $phone, $available, $about, $personnalDataIsVisible, $firstConnection, $promotionId, $schoolId, $profileId) {
+    function __construct($id, $login, $password, $surname, $name, $birthday, $adress1, $adress2, $adress3, $zipCode, $city, $email, $phone, $available, $about, $personnalDataIsVisible, $firstConnection, $promotionId, $schoolId, $profileId, $schoolCity) {
         $this->id = $id;
         $this->login = $login;
         $this->password = $password;
@@ -60,8 +61,11 @@ class UsersDTO {
         $this->firstConnection = $firstConnection;
         $this->promotionId = $promotionId;
         $this->schoolId = $schoolId;
+        $this->schoolCity = $schoolCity;
         $this->profileId = $profileId;
     }
+    
+
     //**************************************************************
     //Getter & Setter
     //**************************************************************
@@ -226,6 +230,14 @@ class UsersDTO {
         $this->profileId = $profileId;
     }
 
-    
+    public function getSchoolCity() {
+        return $this->schoolCity;
+    }
+
+    public function setSchoolCity($schoolCity) {
+        $this->schoolCity = $schoolCity;
+    }
+
+
 
 }

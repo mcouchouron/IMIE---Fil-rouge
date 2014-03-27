@@ -19,7 +19,7 @@ class SkillsController {
     //controller permettant d'afficher la liste complète des skills dans le menu de recherche
     function searchUserSkill(){
         //$skills est un tableau d'objet skills
-        $skills = $this->dao->select("");
+        $skills = $this->dao->selectUserSchool("");
         
     }
 

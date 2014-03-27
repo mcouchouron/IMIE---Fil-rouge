@@ -47,7 +47,8 @@ class UsersDAO {
             $promotionId = $row->promotion_id;
             $schoolId = $row->school_city_id;
             $profileId = $row->profile_id;
-            $user = new UsersDTO($id, $login, $password, $surname, $name, $birthday, $adress1, $adress2, $adress3, $zipCode, $city, $email, $phone, $available, $about, $personnalDataIsVisible, $firstConnection, $promotionId, $schoolId, $profileId);
+            //on ajoute null pour la valeur schoolcity car on ne veut que les données de la table
+            $user = new UsersDTO($id, $login, $password, $surname, $name, $birthday, $adress1, $adress2, $adress3, $zipCode, $city, $email, $phone, $available, $about, $personnalDataIsVisible, $firstConnection, $promotionId, $schoolId, $profileId,null);
             $tab[] = $user;
 
         }
@@ -56,7 +57,55 @@ class UsersDAO {
             return $tab;
         
     }
+    
+    //********************************************************************************************************************************************
+    
+    function selectUserSchool($condition) {
 
+        $pdo = connection("myimieskills", "myparam");
+        $tab = array();
+
+        $result = $pdo->query("SELECT user_id, user_login, user_password, user_name, user_surname, user_date_of_birth, "
+                . "user_address_1, user_address_2, user_address_3, user_postcode, user_city, user_email, user_phone, "
+                . "user_available, user_about, user_personnal_data_is_visible, user_first_connection, promotion_id, "
+                . "sc.school_city_id, profile_id, school_city_name FROM user_data ud INNER JOIN school_city sc "
+                . "ON ud.school_city_id = sc.school_city_id    " . $condition . ";");
+
+        
+        while ($row = $result->fetchObject()) {
+
+            $id = $row->user_id;
+            $login = $row->user_login;
+            $password = $row->user_password;
+            $surname = $row->user_surname;
+            $name = $row->user_name;
+            $birthday = $row->user_date_of_birth;
+            $adress1 = $row->user_address_1;
+            $adress2 = $row->user_address_2;
+            $adress3 = $row->user_address_3;
+            $zipCode = $row->user_postcode;
+            $city = $row->user_city;
+            $email = $row->user_email;
+            $phone = $row->user_phone;
+            $available = $row->user_available;
+            $about = $row->user_about;
+            $personnalDataIsVisible = $row->user_personnal_data_is_visible;
+            $firstConnection = $row->user_first_connection;
+            $promotionId = $row->promotion_id;
+            $schoolId = $row->school_city_id;
+            $schoolCity = $row->school_city_name;
+            $profileId = $row->profile_id;
+            
+            $user = new UsersDTO($id, $login, $password, $surname, $name, $birthday, $adress1, $adress2, $adress3, $zipCode, $city, $email, $phone, $available, $about, $personnalDataIsVisible, $firstConnection, $promotionId, $schoolId, $profileId, $schoolCity);
+            $tab[] = $user;
+
+        }
+            $result->closeCursor();
+            $pdo = disconnect();
+            return $tab;
+        
+    }
+    //********************************************************************************************************************************************
     function update(UsersDTO $user) {
         $pdo = connection("myimieskills", "myparam");
 
