@@ -13,13 +13,14 @@ class SkillsController {
     }
     
     function skillDisplay(){
-        include_once '/../Vue/pageCompetences.php';
+        //$skills = $this->skillsDAO->select("");
+        //include_once '/../Vue/pageCompetences.php';
     }
     
     //controller permettant d'afficher la liste complète des skills dans le menu de recherche
     function searchUserSkill(){
         //$skills est un tableau d'objet skills
-        $skills = $this->dao->selectUserSchool("");
+        //$skills = $this->dao->selectUserSchool("");
         
     }
 

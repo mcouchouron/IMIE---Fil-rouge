@@ -14,19 +14,19 @@
                     </br>
                     <!------------------- champ de sélection des compétences -------------------> 
 
-                    <label id="search2" for="labelRecherche">Par compétence :</label>
+<!--                    <label id="search2" for="labelRecherche">Par compétence :</label>
                     <select id="listechoix" name="choix">
 
                         <option id="champliste2" value="html"> - CHOISISSEZ - </option>
-                        <?php
+                        //<?php
                         //champs de la compétence mère
-                        echo "<optgroup id=\"champliste1\" label=\"" . $skills[$key] = $value->getName() . "\">";
+                        //echo "<optgroup id=\"champliste1\" label=\"" . $skills[$key] = $value->getName() . "\">";
                         //champs des compétences à sélectionner
-                        echo "<option id=\"champliste2\" value=\"skill" . $skills[$key] = $value->getId() . "\">" . $skills[$key] = $value->getName() . "</option>";
+                        //echo "<option id=\"champliste2\" value=\"skill" . $skills[$key] = $value->getId() . "\">" . $skills[$key] = $value->getName() . "</option>";
 
-                        echo "</optgroup>";
-                        ?>
-                    </select>
+                        //echo "</optgroup>";
+                        //?>
+                    </select>-->
 
                     <!------------------- fin champ de sélection des compétences ------------------->  
 
