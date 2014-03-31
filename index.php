@@ -6,6 +6,7 @@ if (!isset($_GET['ctrl'])) {
 } else {
     //****************************************************************
     //si le lien contient un paramètre dans ctrl
+    
     if (isset($_GET['ctrl'])) {
         //************************************************************
         //  CONTROLEUR PAGE PROJETS
@@ -16,6 +17,7 @@ if (!isset($_GET['ctrl'])) {
             $project = new \FilRouge\Controleur\ProjectsController();
             $project->projectDisplay();
         }
+        
         //************************************************************
         //  CONTROLEUR PAGE UTILISATEURS
         //************************************************************
@@ -31,15 +33,18 @@ if (!isset($_GET['ctrl'])) {
         //************************************************************
         //  CONTROLEUR PAGE COMPETENCES
         //************************************************************
+        //
         //renvoi la page 
         if ($_GET['ctrl'] == "pageCompetences") {
             include './Controleur/SkillsController.php';
             $skill = new FilRouge\Controleur\SkillsController();
             $skill->skillDisplay();
         }
+        
         //************************************************************
         //  CONTROLEUR PAGE ACCUEIL
         //************************************************************
+        
         if ($_GET['ctrl'] == "pageAccueil") {
             include './Vue/pageAccueil.php';
         }

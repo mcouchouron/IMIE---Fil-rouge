@@ -14,7 +14,7 @@ class SkillsController {
     
     function skillDisplay(){
         //$skills = $this->skillsDAO->select("");
-        //include_once '/../Vue/pageCompetences.php';
+        include_once '/../Vue/pageCompetences.php';
     }
     
     //controller permettant d'afficher la liste complète des skills dans le menu de recherche

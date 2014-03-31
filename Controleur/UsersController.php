@@ -18,6 +18,83 @@ class UserController {
         $this->skillsDAO = new \FilRouge\Modele\Skills\SkillsDAO();
     }
 
+    //******************************************************************************************************
+
+    /*
+     * La fonction qui suit n'est pas très MVC mais nous n'avions pas le temps de mettre cette 
+     * fonction QUE dans le skillController et y faire appel ici (ou au niveau du front controller).
+     * Il aurait fallut découper le HTML en module (module arborescence, module menu liste 
+     * des écoles).
+     * Nous retrouvons donc cette fonction ici et dans skillController ...
+     */
+
+    //on doit entrer les paramètres (0,0,$skills) pour l'utiliser
+    function treeView($parent, $level, $skills) {
+        $html = "";
+        $lastLevel = 0;
+
+        //si $level et $lastLevel renvoient false alors le caractère html optgroup sera renvoyé car cela veut dire
+        //qu'il n'y a rien. cela sert la première fois
+        if (!$level && !$lastLevel) {
+                $html .= "\n<optgroup id=\"champliste1\" label=\" - Choisissez - \">\n";
+                echo 'je suis là';
+            }
+            
+        
+        //"\n signifie retour à la ligne
+        //$noeud est la variable qui contient l'id parent, elle est null si c'est une catégorie
+        foreach ($skills as $noeud) {
+           if (!$level && !$lastLevel) {
+                $html .= "\n<optgroup id=\"champliste1\" label=\"test".$noeud->getName()."\">\n";
+                echo "OK création cat";
+            } 
+            var_dump($noeud);
+            
+            echo "parent: $parent<br/>";
+            echo "level : $level<br/>";
+            echo "lastlevel : $level<br/>";
+            
+            //si $parent est égale à l'id parent, cela veut dire qu'il fait partie d'une catégorie ...
+            //sinon cela veut dire que c'est une catégorie et on sort de la boucle
+            if ($parent == $noeud->getMotherSkill()) {
+                echo "Je rentre! Dans le premier if </br>";
+                //... et donc subir le traitement suivant
+                //si $lastLevel est inférieur au niveau actuel cela veut dire que nous avons affaire à 
+                //une catégorie (vu que l'id d'une catégorie est null)
+                if ($lastLevel < $level) {
+                    echo "Je rentre! Dans le deuxième if </br>";
+                    $html .= "\n<optgroup id=\"champliste1\" label=\"wtf" . $noeud->getName() . "\">\n";
+                }
+                else{
+                    //sinon c'est une compétence qui appartient à cette catégorie
+                    $html .= "<option style=\"padding-left:".(20*$level)."px;\" id=\"champliste2\" value=\"" . $noeud->getId() . "\">" . $noeud->getName() . "</option>";
+                }
+
+                //on égalise les niveaux, comme ça quand on continera à parcourir le tableau, si l'id est inférieur 
+                //cela voudra dire que c'est une catégorie (car l'id d'une catégorie est null)
+                $lastLevel = $level;
+
+                //je continue à parcourir le tableau tant que le liveau précédent est inférieur au niveau actuel
+                $html .= $this->treeView($noeud->getId(), ($level + 1), $skills);
+            }
+        }
+
+        //je ferme mes balises :
+        //si le niveau est égal à celui actuel et est différent de 0.
+        if (($lastLevel == $level) && ($lastLevel != 0)) {
+            echo "No level $level <br/>";
+            echo "No lastLevel $lastLevel </br>";
+            $html .= "</optgroup>\n";
+            //si le nivaeu est juste égal à 0    
+        } else if ($lastLevel == $level) {
+            $html .= "</optgroup>\n";
+            //sinon c'est une option
+        }
+
+        return $html;
+    }
+
+    //******************************************************************************************************
     function emptyDisplay() {
         //je renvoi un tableau vide pour ne pas avoir d'affichage dans le champ des résultats
         $userList = array();
@@ -25,81 +102,13 @@ class UserController {
         //nous affichons (grâce aux variables de même nom) la liste des école présentes dans la BDD
         $school = $this->schoolDao->select("");
 
-        /*
-         * Ce qui suit n'est pas très MVC mais nous n'avions pas le temps de mettre cette 
-         * fonction QUE dans le skillController et y faire appel ici (ou au niveau du front controller).
-         * Il aurait fallut découper le HTML en module (module arborescence, module menu liste 
-         * des écoles).
-         * Nous retrouvons donc cette fonction ici et dans skillController ...
-         */
-
-        $skills = $this->skillsDAO->select("");
-
-        //on doit entrer les paramètres (0,0,$skills) pour l'utiliser
-        function treeView($parent, $niveau, $skills) {
-            $html = "";
-            $niveau_precedent = 0;
-
-            //si $niveau et $niveau_precedent renvoie false alors le caractère html optgroup sera renvoyé
-            //"\n signifie retour à la ligne
-            if (!$niveau && !$niveau_precedent) {
-                $html .= "\n<optgroup>\n";
-            }
-
-            //$noeud est la variable qui contient l'id parent, elle est null si c'est une catégorie
-            foreach ($skills as $noeud) {
-                //si $parent est égale à l'id parent, cela veut dire qu'il fait partie d'une catégorie ...
-                //sinon cela veut dire que c'est une catégorie et on sort de la boucle
-                if ($parent == $noeud['skill_id_1']) {
-                    //... et donc subir le traitement suivant
-                    //si $niveau_precedent est inférieur au niveau actuel
-                    if ($niveau_precedent < $niveau) {
-                        $html .= "\n<optgroup id=\"champliste1\">\n";
-                    }
-                    $html .= "<option id=\"champliste2\" label=\"" . $noeud['skill_name'] . "\">";
-
-                    $niveau_precedent = $niveau;
-                    $html .= treeView($noeud['skill_id'], ($niveau + 1), $skills);
-                }
-            }
-
-            if (($niveau_precedent == $niveau) && ($niveau_precedent != 0)) {
-                $html .= "</ul>\n</li>\n";
-            } else if ($niveau_precedent == $niveau) {
-                $html .= "</ul>\n";
-            } else {
-                $html .= "</li>\n";
-            }
-
-            return $html;
-        }
-
-//        function treeView($skills){
-//            foreach ($skills as $key => $value){
-//                //si motherskill est null, cela veut dire que c'est que c'est une catégorie 
-//                if($value->getMotherSkill() == null){
-//                    //je fais donc appel à cette même fonction pour continuer à créer des <optgroup>
-//                    //j'insère les données en tant qu'<optgroup> en mettant optgroup et option en variable
-//                    
-//                    //je continue à parcourir mon tableau
-//                    treeView($skills);
-//                    
-//                }
-//                //si motherskill contient une valeur, cela veut dire que c'est une compétence
-//                if($value->getMotherSkill() == !null){
-//                    //j'insère les données en tant <option> de la même façon que précédemment en relation avec l'id contenu
-//                    
-//                    //je continue à parcourir mon tableau
-//                    treeView($skills);
-//                }
-//                
-//                
-//            }
-//        }
+        $skills = $this->skillsDAO->select("ORDER BY skill_id");
+        $html = $this->treeView(null, 0, $skills);
 
         include_once '/../Vue/pageUtilisateurs.php';
     }
 
+    //******************************************************************************************************
     //affichage de tous les utilisateurs et leur école
     function searchUserSchool() {
         //$userlist est réutilisé dans l'include de la vue (en dessous) il contient un tableau d'objet usersDTO
