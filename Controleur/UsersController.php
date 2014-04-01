@@ -37,7 +37,6 @@ class UserController {
         //qu'il n'y a rien. cela sert la première fois
         if (!$level && !$lastLevel) {
                 $html .= "\n<optgroup id=\"champliste1\" label=\" - Choisissez - \">\n";
-                echo 'je suis là';
             }
             
         
@@ -45,29 +44,21 @@ class UserController {
         //$noeud est la variable qui contient l'id parent, elle est null si c'est une catégorie
         foreach ($skills as $noeud) {
            if (!$level && !$lastLevel) {
-                $html .= "\n<optgroup id=\"champliste1\" label=\"test".$noeud->getName()."\">\n";
-                echo "OK création cat";
+                $html .= "\n<optgroup id=\"champliste1\" label=\"".$noeud->getName()."\">\n";
             } 
-            var_dump($noeud);
-            
-            echo "parent: $parent<br/>";
-            echo "level : $level<br/>";
-            echo "lastlevel : $level<br/>";
             
             //si $parent est égale à l'id parent, cela veut dire qu'il fait partie d'une catégorie ...
             //sinon cela veut dire que c'est une catégorie et on sort de la boucle
             if ($parent == $noeud->getMotherSkill()) {
-                echo "Je rentre! Dans le premier if </br>";
                 //... et donc subir le traitement suivant
                 //si $lastLevel est inférieur au niveau actuel cela veut dire que nous avons affaire à 
                 //une catégorie (vu que l'id d'une catégorie est null)
                 if ($lastLevel < $level) {
-                    echo "Je rentre! Dans le deuxième if </br>";
-                    $html .= "\n<optgroup id=\"champliste1\" label=\"wtf" . $noeud->getName() . "\">\n";
+                    $html .= "\n<optgroup id=\"champliste1\" label=\"" . $noeud->getName() . "\">\n";
                 }
                 else{
                     //sinon c'est une compétence qui appartient à cette catégorie
-                    $html .= "<option style=\"padding-left:".(20*$level)."px;\" id=\"champliste2\" value=\"" . $noeud->getId() . "\">" . $noeud->getName() . "</option>";
+                    $html .= "<option  id=\"champliste2\" value=\"" . $noeud->getId() . "\">" . $noeud->getName() . "</option>";
                 }
 
                 //on égalise les niveaux, comme ça quand on continera à parcourir le tableau, si l'id est inférieur 
@@ -82,8 +73,6 @@ class UserController {
         //je ferme mes balises :
         //si le niveau est égal à celui actuel et est différent de 0.
         if (($lastLevel == $level) && ($lastLevel != 0)) {
-            echo "No level $level <br/>";
-            echo "No lastLevel $lastLevel </br>";
             $html .= "</optgroup>\n";
             //si le nivaeu est juste égal à 0    
         } else if ($lastLevel == $level) {

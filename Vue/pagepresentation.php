@@ -56,7 +56,7 @@
                 </p>
                 <img class="blocMotsCle" src="Vue/images/blocMotsCle.png" alt="bloc" />
                 <p id="mots-cles">Mots-clés</p>
-                <a class="mots-cles" href="articleProjets.php">Projets</a>
+                <a class="mots-cles" href="index.php?ctrl=articleProjets.php">Projets</a>
                 <a class="mots-cles" href="http://www.imie-ecole-informatique.fr">IMIE Nantes</a>
             </article>
         </section>

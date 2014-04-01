@@ -1,8 +1,7 @@
 <?php
 
 if (!isset($_GET['ctrl'])) {
-    include './Vue/pageAccueil.php';
-    echo "youhou";
+    include './Vue/login.php';
 } else {
     //****************************************************************
     //si le lien contient un paramètre dans ctrl
@@ -47,6 +46,10 @@ if (!isset($_GET['ctrl'])) {
         
         if ($_GET['ctrl'] == "pageAccueil") {
             include './Vue/pageAccueil.php';
+        }
+        
+        if ($_GET['ctrl'] == "articleProjets") {
+            include './Vue/articleProjets.php';
         }
     }
 }

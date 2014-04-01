@@ -10,7 +10,7 @@ $_SESSION['age'] = 24;
 
 <div id="page">
     <header>
-        <img id="p1" src="Vue/vueimages/imieLogo.jpg" alt="logoImie" title="logoImie"/>
+        <img id="p1" src="/images/imielogo.jpg" alt="logoImie" title="logoImie"/>
         <p id="My">My</p><p id="Imie">imie</p></br>
         <p id="skill">skills</p>
     </header>
@@ -19,7 +19,7 @@ $_SESSION['age'] = 24;
         <p id="titre1">"De l'idée nait</p>
         <p id="titre2">le projet..."</p>
         <div id="zonerecherche">
-            <input id="boutonrecherche" type="image" src="Vue/images/loupe.png" />
+            <input id="boutonrecherche" type="image" src="./Vue/images/loupe.png" />
             <input id="texterecherche" type="text" placeholder="Rechercher" />								
         </div>
     </span>

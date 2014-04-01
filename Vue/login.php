@@ -21,7 +21,7 @@
                         <input id='inputMotdepasse' type='password' placeholder='Mot de passe' />
                     </form>
                     <div id="button">
-                        <a id="boutonconnexion" href="pageAccueil.php">CONNEXION</a>
+                        <a id="boutonconnexion" href="index.php?ctrl=pageAccueil">CONNEXION</a>
                     </div>				
                 </fieldset>
 

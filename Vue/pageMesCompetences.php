@@ -70,12 +70,12 @@
 
                 <form id="formulaire" method="post" action="traitement.php">	
 
-                      <fieldset id="headrecherche">
-                      <h4 id="titreComp">Rechercher une compétence</h4>
+
+                    <h4 id="titreComp">Rechercher une compétence</h4>
                     <label id="search" for="labelRecherche">Recherche :</label>
                     <input id="saisiecomp" value ="" type="text" name="competence" placeholder="Compétence"/></br>
                     <input id="boutonform" name="validation" type="submit" value="Proposer"/>
-                    </fieldset></br>
+                    </br>
 
                     <div id="formcomp"><form>
                             <input type="checkbox" name="choix" value="SQL"><span id="boutonradio">Langage SQL</span></br>
